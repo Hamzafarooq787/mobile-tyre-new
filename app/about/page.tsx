@@ -2,6 +2,7 @@ import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import FloatingButtonsFull from "@/components/ui/floatingbuttons";
 import Link from "next/link";
+    import { Car, Wrench, CircleDot } from "lucide-react";
 
 
 export default function AboutPage() {
@@ -10,26 +11,33 @@ export default function AboutPage() {
   <Header />
 
   <main className="flex-grow">
-    {/* Hero Section with Animation */}
-    <section className="relative h-[350px] overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center scale-105 animate-slow-zoom"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/about.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      <div className="absolute inset-0 bg-black/30"></div>
-      <div className="relative h-full flex flex-col justify-center items-center text-center text-white px-4 animate-fade-in-up">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 animate-slide-in-left">
-          About Us
-        </h1>
-        <p className="text-lg md:text-xl opacity-90 max-w-2xl animate-slide-in-right">
-          Your trusted mobile tyre fitting service across Leicestershire.
-        </p>
-      </div>
-    </section>
+
+<section className="relative h-[350px] overflow-hidden">
+  <div
+    className="absolute inset-0 bg-cover bg-center scale-105 animate-slow-zoom"
+    style={{
+      backgroundImage:
+        "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/about.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  />
+  <div className="absolute inset-0 bg-black/30"></div>
+
+  {/* Animated Icons */}
+  <Car className="absolute top-12 left-12 text-white opacity-20 w-12 h-12 animate-float" />
+  <Wrench className="absolute bottom-14 right-16 text-white opacity-20 w-10 h-10 animate-float delay-1000" />
+  <CircleDot className="absolute top-20 right-10 text-white opacity-20 w-14 h-14 animate-float delay-2000" />
+
+  <div className="relative h-full flex flex-col justify-center items-center text-center text-white px-4 animate-fade-in-up">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 animate-slide-in-left">
+      About Us
+    </h1>
+    <p className="text-lg md:text-xl opacity-90 max-w-2xl animate-slide-in-right">
+      Your trusted mobile tyre fitting service across Leicestershire.
+    </p>
+  </div>
+</section>
 
     {/* About Section with Animation */}
     <section className="py-16 md:py-20 px-4 md:px-8 max-w-7xl mx-auto">
