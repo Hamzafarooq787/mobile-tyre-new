@@ -13,13 +13,13 @@ const Footer = () => {
           {/* Brand column — spans full width on mobile, 2 cols on lg */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="mb-4">
-              <Link href="/">
+              <Link href="/" className="inline-block rounded-xl bg-white px-3 py-2">
                 <Image
                   src="/images/logo.png"
                   alt="Mobile Tyre Leicestershire"
                   width={240}
                   height={78}
-                  className="h-16 w-auto object-contain brightness-0 invert"
+                  className="h-14 w-auto object-contain"
                 />
               </Link>
             </div>
