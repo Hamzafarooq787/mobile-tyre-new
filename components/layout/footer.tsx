@@ -19,7 +19,7 @@ const Footer = () => {
                   alt="Mobile Tyre Leicestershire"
                   width={180}
                   height={58}
-                  className="h-12 w-auto object-contain brightness-0 invert"
+                  className="h-14 w-auto object-contain"
                 />
               </Link>
             </div>
