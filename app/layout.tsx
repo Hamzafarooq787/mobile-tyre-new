@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -83,17 +83,18 @@ export const metadata: Metadata = {
     title: "Mobile Tyre Leicestershire",
     statusBarStyle: "black-translucent",
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
+  category: "automotive",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#0d7ff2" },
     { media: "(prefers-color-scheme: dark)", color: "#101922" },
   ],
-  category: "automotive",
 };
 
 export default function RootLayout({
@@ -128,8 +129,7 @@ export default function RootLayout({
         {/* Microsoft Tiles */}
         <meta name="msapplication-TileColor" content="#0d7ff2" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#0d7ff2" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#101922" media="(prefers-color-scheme: dark)" />
+        {/* theme-color tags removed – they will be injected automatically from viewport */}
       </head>
       <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
         {/* Skip to main content for accessibility */}
