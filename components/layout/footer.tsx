@@ -17,9 +17,9 @@ const Footer = () => {
                 <Image
                   src="/images/logo.png"
                   alt="Mobile Tyre Leicestershire"
-                  width={180}
-                  height={58}
-                  className="h-12 w-auto object-contain brightness-0 invert"
+                  width={240}
+                  height={78}
+                  className="h-16 w-auto object-contain brightness-0 invert"
                 />
               </Link>
             </div>
