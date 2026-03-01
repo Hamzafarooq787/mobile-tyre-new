@@ -1,5 +1,6 @@
 // Footer.tsx
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -11,11 +12,16 @@ const Footer = () => {
 
           {/* Brand column — spans full width on mobile, 2 cols on lg */}
           <div className="sm:col-span-2 lg:col-span-2">
-            <div className="mb-4 flex items-center gap-2 text-white">
-              <span className="material-symbols-outlined text-2xl text-primary flex-shrink-0">tire_repair</span>
-              <h2 className="text-base sm:text-lg font-extrabold tracking-tight leading-tight">
-                Mobile Tyre Leicestershire
-              </h2>
+            <div className="mb-4">
+              <Link href="/" className="inline-block">
+                <Image
+                  src="/images/logo.png"
+                  alt="Mobile Tyre Leicestershire"
+                  width={240}
+                  height={78}
+                  className="h-14 w-auto object-contain mix-blend-screen"
+                />
+              </Link>
             </div>
             <p className="text-sm leading-relaxed max-w-sm mb-6">
               Professional mobile tyre fitting and emergency roadside assistance across Leicestershire. Fast, reliable, and available 24/7.
