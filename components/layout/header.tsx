@@ -32,7 +32,7 @@ const Header = () => {
             ></path>
           </svg>
         </div>
-        <span className="text-xl font-black tracking-tight text-white uppercase">
+        <span className="text-base sm:text-xl font-black tracking-tight text-white uppercase leading-tight line-clamp-1">
           Mobile Tyre Leicestershire
         </span>
       </div>

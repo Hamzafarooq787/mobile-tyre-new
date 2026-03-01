@@ -11,7 +11,7 @@ export default function Home() {
 
   <main className="flex-1">
     {/* Hero Section - Fully Responsive */}
-    <section className="relative overflow-hidden bg-white py-12 sm:py-16 md:py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-white py-12 sm:py-16 md:py-20 lg:py-24 pb-16 sm:pb-20 md:pb-24 lg:pb-28">
       {/* Animated background elements */}
       <div className="absolute top-20 left-10 w-32 h-32 sm:w-40 sm:h-40 md:w-64 md:h-64 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 sm:w-40 sm:h-40 md:w-64 md:h-64 bg-accent/5 rounded-full blur-3xl animate-pulse delay-700"></div>
@@ -107,7 +107,7 @@ export default function Home() {
               </div>
 
               {/* Floating Stats Card - Responsive Positioning */}
-              <div className="absolute -bottom-4 sm:-bottom-6 left-2 sm:left-4 rounded-xl sm:rounded-2xl bg-white p-3 sm:p-4 md:p-6 shadow-lg sm:shadow-xl animate-float">
+              <div className="absolute -bottom-3 sm:-bottom-6 left-2 sm:left-4 rounded-xl sm:rounded-2xl bg-white p-3 sm:p-4 md:p-6 shadow-lg sm:shadow-xl animate-float z-10">
                 <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
                   <div className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-green-100 text-green-600">
                     <span className="material-symbols-outlined text-base sm:text-lg md:text-xl">verified</span>
@@ -224,11 +224,11 @@ export default function Home() {
     </section>
 
     {/* Why Choose Us Section - Responsive */}
-    <section className="bg-white py-16 sm:py-20 md:py-24" id="about">
+    <section className="bg-white py-10 sm:py-16 md:py-24" id="about">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Why Choose Us Section */}
         <div className="mb-16 lg:mb-20 animate-fade-in">
-          <div className="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-purple-50 p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 hover:-translate-y-2">
+          <div className="relative group overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-blue-50 to-purple-50 p-5 sm:p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 hover:-translate-y-2">
 
             {/* Always-visible animated background blobs */}
             <div className="absolute -top-32 -right-32 w-64 h-64 bg-primary/30 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -277,10 +277,10 @@ export default function Home() {
             </div>
 
             <div className="relative z-10">
-              <h3 className="text-3xl lg:text-4xl font-black mb-4 text-slate-900 animate-fade-in-up">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black mb-3 sm:mb-4 text-slate-900 animate-fade-in-up">
                 Why Choose Mobile Tyre Leicestershire?
               </h3>
-              <p className="text-lg text-slate-600 mb-8 max-w-3xl animate-fade-in-up delay-150">
+              <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 max-w-3xl animate-fade-in-up delay-150">
                 We bring the garage to you – at home, work, or roadside. Our expert technicians provide seamless tyre fitting anywhere in Leicestershire with rapid response times and professional excellence.
               </p>
 
@@ -311,7 +311,7 @@ export default function Home() {
 
         {/* Service Areas Section */}
         <div className="animate-fade-in">
-          <div className="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 to-purple-50 p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 hover:-translate-y-2">
+          <div className="relative group overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-blue-50 to-purple-50 p-5 sm:p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 hover:-translate-y-2">
 
             {/* Animated background blobs */}
             <div className="absolute -top-32 -right-32 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>

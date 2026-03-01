@@ -138,17 +138,7 @@ export default function RootLayout({
           {children}
         </main>
         
-        {/* Emergency contact button - mobile sticky */}
-        <div className="fixed bottom-4 right-4 z-50 md:hidden">
-          <a
-            href="tel:07599298404"
-            className="flex items-center gap-2 bg-primary text-white px-5 py-3 rounded-full shadow-xl shadow-primary/50 hover:bg-primary/90 transition-all animate-pulse"
-            aria-label="Call emergency number 07599 298404"
-          >
-            <span className="material-symbols-outlined">emergency</span>
-            <span className="font-bold">07599 298404</span>
-          </a>
-        </div>
+
       </body>
     </html>
   );
