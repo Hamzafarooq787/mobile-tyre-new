@@ -37,10 +37,10 @@ export const metadata: Metadata = {
     siteName: "Mobile Tyre Leicestershire",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/site-icon.png",
         width: 1200,
         height: 630,
-        alt: "Mobile Tyre Leicestershire Service",
+        alt: "Mobile Tyre Leicestershire - Mobile Tyre Fitting & Roadside Assistance",
       },
     ],
     locale: "en_GB",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mobile Tyre Leicestershire - 24/7 Mobile Tyre Fitting",
     description: "Professional roadside assistance at your doorstep in Leicestershire. Available 24/7.",
-    images: ["/twitter-image.jpg"],
+    images: ["/images/site-icon.png"],
   },
   robots: {
     index: true,
@@ -65,19 +65,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/site-icon.png" },
+      { url: "/images/site-icon.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/site-icon.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
-        color: "#0d7ff2",
-      },
+      { url: "/images/site-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
   manifest: "/manifest.json",
@@ -128,7 +121,7 @@ export default function RootLayout({
         
         {/* Microsoft Tiles */}
         <meta name="msapplication-TileColor" content="#0d7ff2" />
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="msapplication-TileImage" content="/images/site-icon.png" />
       </head>
       <body className="bg-background-light text-slate-900 antialiased" suppressHydrationWarning>
         {/* Skip to main content for accessibility */}
