@@ -1,6 +1,3 @@
-import Footer from "@/components/layout/footer";
-import Header from "@/components/layout/header";
-import FloatingButtonsFull from "@/components/ui/floatingbuttons";
 import Link from "next/link";
     import { Car, Wrench, CircleDot } from "lucide-react";
 
@@ -8,7 +5,6 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <div className="relative flex min-h-screen flex-col overflow-x-hidden">
-  <Header />
 
   <main className="flex-grow">
 
@@ -281,8 +277,6 @@ export default function AboutPage() {
     </section>
   </main>
 
-  <Footer />
-  <FloatingButtonsFull />
 </div>
   );
 }

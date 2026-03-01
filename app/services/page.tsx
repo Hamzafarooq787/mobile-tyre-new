@@ -1,7 +1,4 @@
 
-import Footer from "@/components/layout/footer";
-import Header from "@/components/layout/header";
-import FloatingButtonsFull from "@/components/ui/floatingbuttons";
 import Link from "next/link";
 
 
@@ -82,7 +79,6 @@ const services = [
 export default function ServicesPage() {
   return (
     <div className="relative flex min-h-screen flex-col overflow-x-hidden">
-  <Header />
 
   <main className="flex-grow">
     {/* Hero Section with Animations */}
@@ -247,8 +243,6 @@ export default function ServicesPage() {
     </section>
   </main>
 
-  <Footer />
-  <FloatingButtonsFull/>
 </div>
   );
 }

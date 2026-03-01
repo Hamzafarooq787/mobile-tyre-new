@@ -1,13 +1,9 @@
 
-import Footer from "@/components/layout/footer";
-import Header from "@/components/layout/header";
-import FloatingButtonsFull from "@/components/ui/floatingbuttons";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-  <Header />
 
   <main className="flex-1">
     {/* Hero Section - Fully Responsive */}
@@ -501,8 +497,6 @@ export default function Home() {
     </section>
   </main>
 
-  <Footer />
-  <FloatingButtonsFull />
-</div>
+    </div>
   );
 }

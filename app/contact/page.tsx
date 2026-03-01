@@ -1,12 +1,9 @@
 
-import Footer from "@/components/layout/footer";
-import Header from "@/components/layout/header";
 import Link from "next/link";
 
 export default function ContactPage() {
   return (
     <div className="relative flex min-h-screen flex-col overflow-x-hidden">
-  <Header />
 
   <main className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
     {/* Hero Section with Animations */}
@@ -210,7 +207,6 @@ export default function ContactPage() {
     </div>
   </main>
 
-  <Footer />
 </div>
   );
 }

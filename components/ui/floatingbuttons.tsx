@@ -20,40 +20,6 @@ const FloatingButtonsFull = () => {
 
   return (
     <>
-      {/* WhatsApp Button - Left Side (hidden on mobile, bottom nav used instead) */}
-      <div className="fixed bottom-4 left-4 z-50 group hidden md:block">
-        <Link
-          href="https://wa.me/447599298404?text=Hello%20Mobile%20Tyre%20Leicestershire%2C%20I%20need%20emergency%20roadside%20assistance%21"
-          target="_blank"
-          className="flex items-center gap-3 bg-green-500 text-white pl-3 pr-5 py-3 rounded-full shadow-xl shadow-green-500/50 hover:bg-green-600 transition-all duration-300 hover:scale-105"
-        >
-          <span className="material-symbols-outlined text-2xl">chat</span>
-          <span className="font-bold text-sm hidden sm:inline">WhatsApp</span>
-        </Link>
-        
-        {/* Online status */}
-        <span className="absolute -top-1 -right-1 w-3 h-3 bg-green-300 rounded-full border-2 border-white animate-pulse"></span>
-      </div>
-
-      {/* Emergency Call Button - Right Side (hidden on mobile, bottom nav used instead) */}
-      <div className="fixed bottom-4 right-4 z-50 group hidden md:block">
-        <Link
-          href="tel:07599298404"
-          className="flex items-center gap-3 bg-primary text-white pl-3 pr-5 py-3 rounded-full shadow-xl shadow-primary/50 hover:bg-primary/90 transition-all duration-300 hover:scale-105"
-        >
-          <span className="material-symbols-outlined text-2xl animate-ring relative">
-            call
-            <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-ping"></span>
-          </span>
-          <span className="font-bold text-sm hidden sm:inline">07599 298404</span>
-        </Link>
-        
-        {/* 24/7 badge */}
-        <span className="absolute -top-2 -right-2 bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
-          24/7
-        </span>
-      </div>
-
       {/* Back to Top Button */}
       {showScrollTop && (
         <button

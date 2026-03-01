@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import FloatingButtonsFull from "@/components/ui/floatingbuttons";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -132,12 +135,16 @@ export default function RootLayout({
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-[100]">
           Skip to main content
         </a>
-        
+
+        <Header />
+
         {/* Main content */}
         <main id="main-content">
           {children}
         </main>
-        
+
+        <Footer />
+        <FloatingButtonsFull />
 
       </body>
     </html>
