@@ -94,8 +94,19 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 border-t border-slate-800 pt-6 text-center text-xs">
+        <div className="mt-10 border-t border-slate-800 pt-6 text-center text-xs flex flex-col gap-1.5">
           <p>© {new Date().getFullYear()} Mobile Tyre Leicestershire. All rights reserved.</p>
+          <p>
+            Designed &amp; Developed by{" "}
+            <a
+              href="https://linkedo.co.uk/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              className="text-primary hover:underline transition-colors"
+            >
+              Linkedo
+            </a>
+          </p>
         </div>
 
       </div>
