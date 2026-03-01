@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import FloatingButtonsFull from "@/components/ui/floatingbuttons";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -127,28 +130,22 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#0d7ff2" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       </head>
-      <body className="bg-background-light text-slate-900 antialiased">
+      <body className="bg-background-light text-slate-900 antialiased" suppressHydrationWarning>
         {/* Skip to main content for accessibility */}
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-[100]">
           Skip to main content
         </a>
-        
+
+        <Header />
+
         {/* Main content */}
         <main id="main-content">
           {children}
         </main>
-        
-        {/* Emergency contact button - mobile sticky */}
-        <div className="fixed bottom-4 right-4 z-50 md:hidden">
-          <a
-            href="tel:07599298404"
-            className="flex items-center gap-2 bg-primary text-white px-5 py-3 rounded-full shadow-xl shadow-primary/50 hover:bg-primary/90 transition-all animate-pulse"
-            aria-label="Call emergency number 07599 298404"
-          >
-            <span className="material-symbols-outlined">emergency</span>
-            <span className="font-bold">07599 298404</span>
-          </a>
-        </div>
+
+        <Footer />
+        <FloatingButtonsFull />
+
       </body>
     </html>
   );

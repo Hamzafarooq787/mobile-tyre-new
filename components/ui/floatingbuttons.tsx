@@ -1,95 +1,45 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const FloatingButtonsFull = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 500);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
-    <>
-      {/* WhatsApp Button - Left Side */}
-      <div className="fixed bottom-4 left-4 z-50 group">
-        <Link
-          href="https://wa.me/447599298404?text=Hello%20Mobile%20Tyre%20Leicestershire%2C%20I%20need%20emergency%20roadside%20assistance%21"
-          target="_blank"
-          className="flex items-center gap-3 bg-green-500 text-white pl-3 pr-5 py-3 rounded-full shadow-xl shadow-green-500/50 hover:bg-green-600 transition-all duration-300 hover:scale-105"
+    <div className="fixed bottom-6 right-5 z-50 flex flex-col items-center gap-3">
+      {/* WhatsApp */}
+      <Link
+        href="https://wa.me/447599298404?text=Hello%20Mobile%20Tyre%20Leicestershire%2C%20I%20need%20assistance!"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="flex h-13 w-13 items-center justify-center rounded-full bg-green-500 text-white shadow-lg shadow-green-500/40 hover:bg-green-600 hover:scale-110 transition-all duration-300"
+      >
+        {/* WhatsApp SVG icon */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="h-7 w-7"
+          aria-hidden="true"
         >
-          <span className="material-symbols-outlined text-2xl">chat</span>
-          <span className="font-bold text-sm hidden sm:inline">WhatsApp</span>
-        </Link>
-        
-        {/* Online status */}
-        <span className="absolute -top-1 -right-1 w-3 h-3 bg-green-300 rounded-full border-2 border-white animate-pulse"></span>
-      </div>
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.514 5.842L.057 23.117a.75.75 0 0 0 .916.932l5.424-1.426A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.712 9.712 0 0 1-4.989-1.374l-.356-.213-3.695.97.988-3.607-.232-.371A9.712 9.712 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z" />
+        </svg>
+      </Link>
 
-      {/* Emergency Call Button - Right Side */}
-      <div className="fixed bottom-4 right-4 z-50 group">
-        <Link
-          href="tel:07599298404"
-          className="flex items-center gap-3 bg-primary text-white pl-3 pr-5 py-3 rounded-full shadow-xl shadow-primary/50 hover:bg-primary/90 transition-all duration-300 hover:scale-105"
+      {/* Call */}
+      <Link
+        href="tel:07599298404"
+        aria-label="Call us now"
+        className="flex h-13 w-13 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/40 hover:bg-primary/90 hover:scale-110 transition-all duration-300"
+      >
+        <span
+          className="material-symbols-outlined text-2xl"
+          style={{ fontVariationSettings: "'FILL' 1" }}
         >
-          <span className="material-symbols-outlined text-2xl animate-ring relative">
-            call
-            <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-ping"></span>
-          </span>
-          <span className="font-bold text-sm hidden sm:inline">07599 298404</span>
-        </Link>
-        
-        {/* 24/7 badge */}
-        <span className="absolute -top-2 -right-2 bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
-          24/7
+          call
         </span>
-      </div>
-
-      {/* Back to Top Button */}
-      {showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-20 right-4 z-50 bg-slate-800 text-white p-3 rounded-full shadow-xl hover:bg-primary transition-all duration-300 hover:scale-110 animate-fade-in"
-        >
-          <span className="material-symbols-outlined text-2xl">arrow_upward</span>
-        </button>
-      )}
-
-      {/* Mobile Bottom Bar - Only on Mobile */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-2 px-4 flex justify-around items-center z-40 md:hidden">
-        <Link href="/" className="flex flex-col items-center text-primary">
-          <span className="material-symbols-outlined text-xl">home</span>
-          <span className="text-[10px]">Home</span>
-        </Link>
-        <Link href="/services" className="flex flex-col items-center text-slate-600">
-          <span className="material-symbols-outlined text-xl">build</span>
-          <span className="text-[10px]">Services</span>
-        </Link>
-        <Link
-          href="tel:07599298404"
-          className="flex flex-col items-center -mt-8 bg-primary text-white p-3 rounded-full shadow-lg"
-        >
-          <span className="material-symbols-outlined text-2xl">call</span>
-        </Link>
-        <Link href="/about" className="flex flex-col items-center text-slate-600">
-          <span className="material-symbols-outlined text-xl">info</span>
-          <span className="text-[10px]">About</span>
-        </Link>
-        <Link href="/contact" className="flex flex-col items-center text-slate-600">
-          <span className="material-symbols-outlined text-xl">mail</span>
-          <span className="text-[10px]">Contact</span>
-        </Link>
-      </div>
-    </>
+      </Link>
+    </div>
   );
 };
 

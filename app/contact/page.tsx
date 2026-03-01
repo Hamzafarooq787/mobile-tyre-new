@@ -1,216 +1,195 @@
+"use client";
 
-import Footer from "@/components/layout/footer";
-import Header from "@/components/layout/header";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [form, setForm] = useState({ name: "", phone: "", vehicle: "", message: "" });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const text = [
+      `*New Quote Request*`,
+      `Name: ${form.name}`,
+      `Phone: ${form.phone}`,
+      `Vehicle: ${form.vehicle}`,
+      `Message: ${form.message}`,
+    ].join("\n");
+    const url = `https://wa.me/447599298404?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="relative flex min-h-screen flex-col overflow-x-hidden">
-  <Header />
+      <main className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
 
-  <main className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-    {/* Hero Section with Animations */}
-    <div className="mb-12 animate-fade-in">
-      <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-4 animate-slide-in-left">
-        Contact Us
-      </h1>
-      <p className="text-lg text-slate-600 max-w-2xl animate-slide-in-right delay-150">
-        Expert mobile tyre services across Leicestershire, just a call away. Our team is ready to help you get back on the road safely.
-      </p>
-    </div>
-
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-      {/* Contact Information & Map */}
-      <div className="space-y-8 animate-fade-in-left">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* Phone - Pop In Animation */}
-          <Link
-            href="tel:07599298404"
-            className="group p-6 bg-white border border-slate-200 rounded-xl hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pop-in"
-            style={{ animationDelay: "0.1s" }}
-          >
-            <div className="size-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
-              <span className="material-symbols-outlined animate-ring">phone_in_talk</span>
-            </div>
-            <h3 className="font-bold text-slate-900 mb-1 group-hover:text-primary transition-colors">Call Us</h3>
-            <p className="text-slate-600 text-sm mb-2">Speak to an expert now</p>
-            <p className="text-primary font-bold group-hover:scale-105 transition-transform">07599 298404</p>
-            
-            {/* Animated underline */}
-            <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:left-0 transition-all duration-300"></div>
-            <div className="absolute bottom-0 right-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 group-hover:right-0 transition-all duration-300"></div>
-          </Link>
-
-          {/* Email - Pop In Animation */}
-          <Link
-            href="mailto:info@mobiletyreleicestershire.co.uk"
-            className="group p-6 bg-white border border-slate-200 rounded-xl hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-xl animate-pop-in"
-            style={{ animationDelay: "0.2s" }}
-          >
-            <div className="size-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300 group-hover:rotate-12 group-hover:scale-110">
-              <span className="material-symbols-outlined animate-bounce-gentle">mail</span>
-            </div>
-            <h3 className="font-bold text-slate-900 mb-1 group-hover:text-primary transition-colors">Email Us</h3>
-            <p className="text-slate-600 text-sm mb-2">We reply within 2 hours</p>
-            <p className="text-primary font-bold group-hover:scale-105 transition-transform break-all">info@mobiletyreleicestershire.co.uk</p>
-            
-            {/* Animated shine effect */}
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-          </Link>
-
-          {/* Working Hours - Fade In Up Animation */}
-          <div 
-            className="p-6 bg-white border border-slate-200 rounded-xl sm:col-span-2 animate-fade-in-up"
-            style={{ animationDelay: "0.3s" }}
-          >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="size-10 bg-accent/10 text-accent rounded-lg flex items-center justify-center animate-pulse">
-                <span className="material-symbols-outlined">schedule</span>
-              </div>
-              <h3 className="font-bold text-slate-900">Working Hours</h3>
-            </div>
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              {[
-                { day: "Mon - Fri", hours: "8:00 AM - 6:00 PM", delay: "0.1s" },
-                { day: "Saturday", hours: "9:00 AM - 4:00 PM", delay: "0.2s" },
-                { day: "Sunday", hours: "Closed", delay: "0.3s", accent: true },
-                { day: "Holidays", hours: "10:00 AM - 2:00 PM", delay: "0.4s" },
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="flex justify-between border-b border-slate-100 pb-2 hover:translate-x-1 transition-transform duration-300 animate-fade-in-right"
-                  style={{ animationDelay: item.delay }}
-                >
-                  <span className="text-slate-500 break-words pr-2">{item.day}</span>
-                  <span className={`font-semibold text-right break-words ${item.accent ? 'text-accent' : ''}`}>
-                    {item.hours}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Map Placeholder with Animations */}
-        <div className="relative overflow-hidden rounded-xl border border-slate-200 h-64 bg-slate-200 group animate-fade-in-up delay-500">
-          {/* Map image with zoom effect */}
-          <div
-            className="absolute inset-0 bg-cover bg-center opacity-80 transition-transform duration-10000 group-hover:scale-110"
-            style={{
-              backgroundImage:
-                'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJKumfwTBY9gtiBGEX5antlnSDRZTiisYx-HjtKsrYdM7kxFQNlNLdudeZnX3NE8CEfgzCVibiGqNcnj68FkFiLEPo3yGvSVa4jgP2U8cshBv8Cy1nZ6lWtQQYYnGKa_AnuTEOZnn-ZSknsJRbyp7a2S08L2DRpjRgaycdZENJhYZTjrglPhjD66bbKF9mtAqy_163K533KRASaeVcVOFhE0G1jPoGrbdN7bJO5NhrQvq6Ev9JUrtGEWAp7VPRoaHnkfppaAp8xyaW")',
-            }}
-          ></div>
-          
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          
-          {/* Location card with bounce animation */}
-          <div className="absolute inset-0 flex items-center justify-center px-4">
-            <div className="bg-white p-4 rounded-lg shadow-xl border border-slate-100 flex items-center gap-3 transform hover:scale-110 transition-transform duration-300 animate-bounce-gentle max-w-[250px]">
-              <span className="material-symbols-outlined text-primary animate-pulse flex-shrink-0">location_on</span>
-              <div className="text-center">
-                <p className="font-bold text-sm break-words">Mobile Tyre Leicestershire</p>
-                <p className="text-xs text-slate-500 break-words">Leicester, Leicestershire</p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Pulsing dots */}
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-ping"></div>
-          <div className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-accent rounded-full animate-ping delay-300"></div>
-        </div>
-      </div>
-
-      {/* Contact Form with Animations */}
-      <div className="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm animate-fade-in-right">
-        <h2 className="text-2xl font-bold text-slate-900 mb-6 animate-slide-in-right">
-          Send us a message
-        </h2>
-        
-        <form action="#" className="space-y-6" method="POST">
-          {/* Name Field */}
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-slate-700 mb-2"
-            >
-              Full Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="John Doe"
-              required
-              className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 hover:scale-[1.02] focus:scale-100"
-            />
-          </div>
-
-          {/* Email Field */}
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-slate-700 mb-2"
-            >
-              Email Address
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="info@mobiletyreleicestershire.co.uk"
-              required
-              className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 hover:scale-[1.02] focus:scale-100"
-            />
-          </div>
-
-          {/* Message Field */}
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-slate-700 mb-2"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="How can we help you today?"
-              required
-              rows={5}
-              className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 hover:scale-[1.02] focus:scale-100"
-            ></textarea>
-          </div>
-
-          {/* Submit Button with Animations */}
-          <button
-            type="submit"
-            className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-4 rounded-lg shadow-lg shadow-accent/20 transition-all duration-300 transform hover:scale-105 active:scale-[0.98] flex items-center justify-center gap-2 group relative overflow-hidden animate-fade-in-up"
-            style={{ animationDelay: "0.4s" }}
-          >
-            {/* Shine effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-            
-            <span className="material-symbols-outlined group-hover:rotate-12 transition-transform duration-300">
-              send
-            </span>
-            Send Message
-            
-            {/* Ripple effect on hover */}
-            <span className="absolute inset-0 rounded-lg bg-white/20 scale-0 group-hover:scale-150 transition-transform duration-500 opacity-0 group-hover:opacity-100"></span>
-          </button>
-
-          {/* Privacy Policy Text */}
-          <p className="text-center text-xs text-slate-500 mt-4 animate-fade-in-up delay-500">
-            By submitting this form, you agree to our privacy policy and terms of service.
+        {/* Hero */}
+        <div className="mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-3">
+            Contact Us
+          </h1>
+          <p className="text-base sm:text-lg text-slate-600 max-w-2xl">
+            Expert mobile tyre services across Leicestershire, just a call away. Our team is ready to help you get back on the road safely.
           </p>
-        </form>
-      </div>
-    </div>
-  </main>
+        </div>
 
-  <Footer />
-</div>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
+
+          {/* Left — contact cards + map */}
+          <div className="flex flex-col gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+              {/* Call card */}
+              <Link
+                href="tel:07599298404"
+                className="group relative overflow-hidden flex flex-col gap-3 rounded-xl border border-slate-200 bg-white p-5 hover:border-primary hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <span className="material-symbols-outlined">phone_in_talk</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-slate-900 group-hover:text-primary transition-colors">Call Us</h3>
+                  <p className="text-xs text-slate-500 mb-1">Speak to an expert now</p>
+                  <p className="text-primary font-bold text-sm">07599 298404</p>
+                </div>
+              </Link>
+
+              {/* Email card */}
+              <Link
+                href="mailto:info@mobiletyreleicestershire.co.uk"
+                className="group relative overflow-hidden flex flex-col gap-3 rounded-xl border border-slate-200 bg-white p-5 hover:border-primary hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <span className="material-symbols-outlined">mail</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-slate-900 group-hover:text-primary transition-colors">Email Us</h3>
+                  <p className="text-xs text-slate-500 mb-1">We reply within 2 hours</p>
+                  <p className="text-primary font-bold text-xs break-all">info@mobiletyreleicestershire.co.uk</p>
+                </div>
+              </Link>
+            </div>
+
+            {/* Map */}
+            <div className="relative overflow-hidden rounded-xl border border-slate-200 h-52 sm:h-64 bg-slate-200 group">
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700"
+                style={{
+                  backgroundImage:
+                    'url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJKumfwTBY9gtiBGEX5antlnSDRZTiisYx-HjtKsrYdM7kxFQNlNLdudeZnX3NE8CEfgzCVibiGqNcnj68FkFiLEPo3yGvSVa4jgP2U8cshBv8Cy1nZ6lWtQQYYnGKa_AnuTEOZnn-ZSknsJRbyp7a2S08L2DRpjRgaycdZENJhYZTjrglPhjD66bbKF9mtAqy_163K533KRASaeVcVOFhE0G1jPoGrbdN7bJO5NhrQvq6Ev9JUrtGEWAp7VPRoaHnkfppaAp8xyaW")',
+                }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center px-4">
+                <div className="bg-white px-4 py-3 rounded-lg shadow-xl border border-slate-100 flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary flex-shrink-0">location_on</span>
+                  <div>
+                    <p className="font-bold text-sm">Mobile Tyre Leicestershire</p>
+                    <p className="text-xs text-slate-500">Leicester, Leicestershire</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right — WhatsApp quote form */}
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-8 shadow-sm">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-500">
+                <svg viewBox="0 0 24 24" fill="white" className="w-5 h-5" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </div>
+              <div>
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900">Get a Quote</h2>
+                <p className="text-xs text-slate-500">Sends directly to our WhatsApp</p>
+              </div>
+            </div>
+
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1.5">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="John Doe"
+                  required
+                  className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1.5">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={form.phone}
+                  onChange={handleChange}
+                  placeholder="07700 000000"
+                  required
+                  className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="vehicle" className="block text-sm font-medium text-slate-700 mb-1.5">
+                  Vehicle Details
+                </label>
+                <input
+                  type="text"
+                  id="vehicle"
+                  name="vehicle"
+                  value={form.vehicle}
+                  onChange={handleChange}
+                  placeholder="e.g. Ford Focus 2019, 205/55R16"
+                  className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1.5">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="Describe your tyre issue or what you need..."
+                  required
+                  rows={4}
+                  className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-all resize-none"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full flex items-center justify-center gap-2.5 rounded-xl bg-green-500 hover:bg-green-600 active:scale-[0.98] text-white font-bold py-3.5 shadow-lg shadow-green-500/30 transition-all duration-300"
+              >
+                <svg viewBox="0 0 24 24" fill="white" className="w-5 h-5 flex-shrink-0" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Send via WhatsApp
+              </button>
+
+              <p className="text-center text-xs text-slate-400">
+                Tapping the button will open WhatsApp with your details pre-filled.
+              </p>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
   );
 }
