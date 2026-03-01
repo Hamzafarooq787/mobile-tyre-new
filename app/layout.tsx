@@ -91,10 +91,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#0d7ff2" },
-    { media: "(prefers-color-scheme: dark)", color: "#101922" },
-  ],
+  themeColor: "#0d7ff2", // ✅ sirf light mode color rakha
 };
 
 export default function RootLayout({
@@ -129,9 +126,8 @@ export default function RootLayout({
         {/* Microsoft Tiles */}
         <meta name="msapplication-TileColor" content="#0d7ff2" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        {/* theme-color tags removed – they will be injected automatically from viewport */}
       </head>
-      <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+      <body className="bg-background-light text-slate-900 antialiased">
         {/* Skip to main content for accessibility */}
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-lg z-[100]">
           Skip to main content

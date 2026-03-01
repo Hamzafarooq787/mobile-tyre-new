@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,7 +13,7 @@ const config: Config = {
         primary: "#0d7ff2",
         "accent-orange": "#f97316",
         "background-light": "#f5f7f8",
-        "background-dark": "#101922",
+        // "background-dark" removed (no longer needed for dark mode)
       },
       fontFamily: {
         display: ["Inter", "sans-serif"],
