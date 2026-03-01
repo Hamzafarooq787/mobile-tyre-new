@@ -3,80 +3,101 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 py-12 pb-28 md:pb-12 text-slate-400">
-      <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-          <div className="col-span-1 md:col-span-2">
-            <div className="mb-6 flex items-center gap-3 text-white">
-              <span className="material-symbols-outlined text-3xl text-primary">tire_repair</span>
-              <h2 className="text-xl font-extrabold tracking-tight">Mobile Tyre Leicestershire</h2>
+    <footer className="bg-slate-900 text-slate-400 pb-24 md:pb-0">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+
+        {/* Top grid */}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+          {/* Brand column — spans full width on mobile, 2 cols on lg */}
+          <div className="sm:col-span-2 lg:col-span-2">
+            <div className="mb-4 flex items-center gap-2 text-white">
+              <span className="material-symbols-outlined text-2xl text-primary flex-shrink-0">tire_repair</span>
+              <h2 className="text-base sm:text-lg font-extrabold tracking-tight leading-tight">
+                Mobile Tyre Leicestershire
+              </h2>
             </div>
-            <p className="mb-6 max-w-sm leading-relaxed">
-              Professional mobile tyre fitting and emergency roadside assistance across Leicestershire. Fast, reliable, and available when you need us most – 24/7.
+            <p className="text-sm leading-relaxed max-w-sm mb-6">
+              Professional mobile tyre fitting and emergency roadside assistance across Leicestershire. Fast, reliable, and available 24/7.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               <Link
                 href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 hover:bg-primary hover:text-white transition-colors"
+                aria-label="Facebook"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-800 hover:bg-primary hover:text-white transition-colors"
               >
-                <span className="material-symbols-outlined text-xl">social_leaderboard</span>
+                <span className="material-symbols-outlined text-base">social_leaderboard</span>
               </Link>
               <Link
                 href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 hover:bg-primary hover:text-white transition-colors"
+                aria-label="Share"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-800 hover:bg-primary hover:text-white transition-colors"
               >
-                <span className="material-symbols-outlined text-xl">share</span>
+                <span className="material-symbols-outlined text-base">share</span>
               </Link>
             </div>
           </div>
+
+          {/* Services column */}
           <div>
-            <h3 className="mb-6 font-bold text-white">Our Services</h3>
-            <ul className="flex flex-col gap-3">
+            <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-white">Our Services</h3>
+            <ul className="flex flex-col gap-2.5 text-sm">
               <li>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="/services" className="hover:text-primary transition-colors">
                   Mobile Tyre Fitting
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="/services" className="hover:text-primary transition-colors">
                   Battery JumpStart
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="/services" className="hover:text-primary transition-colors">
                   Fuel Delivery
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="/services" className="hover:text-primary transition-colors">
                   Wheel Balancing
                 </Link>
               </li>
             </ul>
           </div>
+
+          {/* Contact column */}
           <div>
-            <h3 className="mb-6 font-bold text-white">Contact Info</h3>
-            <ul className="flex flex-col gap-3">
-              <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-sm text-primary">phone</span>
-                07599 298404
+            <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-white">Contact</h3>
+            <ul className="flex flex-col gap-3 text-sm">
+              <li>
+                <Link href="tel:07599298404" className="flex items-center gap-2 hover:text-primary transition-colors">
+                  <span className="material-symbols-outlined text-base text-primary flex-shrink-0">phone</span>
+                  <span>07599 298404</span>
+                </Link>
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-sm text-primary">mail</span>
-                info@mobiletyreleicestershire.co.uk
+                <span className="material-symbols-outlined text-base text-primary flex-shrink-0 mt-0.5">mail</span>
+                <a
+                  href="mailto:info@mobiletyreleicestershire.co.uk"
+                  className="break-all hover:text-primary transition-colors"
+                >
+                  info@mobiletyreleicestershire.co.uk
+                </a>
               </li>
               <li className="flex items-start gap-2">
-                <span className="material-symbols-outlined text-sm text-primary">location_on</span>
-                <span>
-                  24/7 Mobile Service <br /> Covering all Leicestershire
-                </span>
+                <span className="material-symbols-outlined text-base text-primary flex-shrink-0 mt-0.5">location_on</span>
+                <span>24/7 Mobile Service<br />Covering all Leicestershire</span>
               </li>
             </ul>
           </div>
+
         </div>
-        <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs">
-          <p>© 2024 Mobile Tyre Leicestershire. All rights reserved. Professional Mobile Tyre Services.</p>
+
+        {/* Bottom bar */}
+        <div className="mt-10 border-t border-slate-800 pt-6 text-center text-xs">
+          <p>© {new Date().getFullYear()} Mobile Tyre Leicestershire. All rights reserved.</p>
         </div>
+
       </div>
     </footer>
   );
