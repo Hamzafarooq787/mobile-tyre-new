@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Mobile Tyre Leicestershire",
     images: [
       {
-        url: "/site-icon.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mobile Tyre Leicestershire - Mobile Tyre Fitting & Roadside Assistance",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mobile Tyre Leicestershire - 24/7 Mobile Tyre Fitting",
     description: "Professional roadside assistance at your doorstep in Leicestershire. Available 24/7.",
-    images: ["/site-icon.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
