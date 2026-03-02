@@ -1,7 +1,7 @@
 const { writeFileSync, mkdirSync } = require("fs");
 const { join } = require("path");
 
-const projectRoot = join(__dirname, "..");
+const projectRoot = "/vercel/share/v0-project";
 
 const ICON_URL =
   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/site-icon%20%282%29-KkpblVipb0yqZvgK1ZOtGU8nHr1OxO.png";
