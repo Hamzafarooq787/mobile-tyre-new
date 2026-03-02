@@ -53,16 +53,14 @@ export default function Home() {
                 <span className="absolute inset-0 rounded-xl bg-orange-400/20 animate-pulse-slow"></span>
               </Link>
 
-              {/* View Pricing Button */}
               <Link
                 href="/services"
                 className="flex items-center justify-center gap-2 rounded-xl border-2 border-orange-200 bg-white/90 backdrop-blur-sm px-5 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg font-bold text-slate-900 hover:bg-orange-50 hover:border-orange-400 transition-all duration-300 group relative overflow-hidden animate-fade-in-up delay-500"
               >
-                <span>View Pricing</span>
+                <span>Our Services</span>
                 <span className="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform animate-float-slow">
                   arrow_forward
                 </span>
-                {/* Subtle shimmer line */}
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-200/50 to-transparent -translate-x-full animate-shimmer-slow"></span>
               </Link>
             </div>
