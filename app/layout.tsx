@@ -5,7 +5,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import FloatingButtonsFull from "@/components/ui/floatingbuttons";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://mobiletyreleicestershire.co.uk"),
+  metadataBase: new URL("https://mobile-tyre-new.vercel.app/"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Mobile Tyre Leicestershire - Mobile Tyre Fitting & Roadside Assistance",
     description: "24/7 emergency mobile tyre fitting across Leicestershire. We come to you with fast, professional service.",
-    url: "https://mobiletyreleicestershire.co.uk",
+    url: "https://mobile-tyre-new.vercel.app/",
     siteName: "Mobile Tyre Leicestershire",
     images: [
       {
@@ -103,22 +103,22 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,1&display=swap"
           rel="stylesheet"
         />
-        
+
         {/* Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* Phone number detection */}
         <meta name="format-detection" content="telephone=yes" />
-        
+
         {/* Emergency contact meta */}
         <meta name="emergency-contact" content="07599298404" />
-        
+
         {/* Apple specific */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Mobile Tyre Leicestershire" />
-        
+
         {/* Microsoft Tiles */}
         <meta name="msapplication-TileColor" content="#0d7ff2" />
         <meta name="msapplication-TileImage" content="/site-icon.png" />
