@@ -12,7 +12,7 @@ export default function AboutPage() {
             className="absolute inset-0 scale-105 animate-slow-zoom"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('/about.jpg')",
+                "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Van-Image%20%281%29-5MVG3X80eAOoIuVj7lX6mQI9vPPWEC.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -51,7 +51,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-3 gap-3 sm:gap-6 mt-6 sm:mt-8">
                 {[
                   { icon: "schedule", value: "24/7", label: "Availability" },
-                  { icon: "speed", value: "30–60m", label: "Avg Response" },
+                  { icon: "speed", value: "15–30m", label: "Avg Response" },
                   { icon: "tire_repair", value: "5K+", label: "Tyres Fitted" },
                 ].map((stat) => (
                   <div key={stat.label} className="group flex flex-col items-center text-center bg-slate-50 rounded-xl p-3 sm:p-4">
