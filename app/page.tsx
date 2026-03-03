@@ -144,32 +144,60 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {[
             {
-              title: "24/7 Emergency Service",
-              desc: "Round-the-clock service for urgent tyre needs – we're available 24/7 to get you back on the road.",
-              image: "/services/s7.jpeg",
-              icon: "schedule",
+              title: "Mobile Tyre Fitting",
+              desc: "Professional mobile tyre fitting at your home, workplace, or roadside anywhere in Leicestershire. We supply and fit tyres quickly and safely with expert service you can rely on.",
+              image: "/services/s1.jpg",
+              icon: "tire_repair",
               delay: "0.1s"
             },
             {
-              title: "Competitive Prices",
-              desc: "High-quality service doesn't have to break the bank. Transparent pricing with no hidden fees.",
-              image: "/services/s8.jpg",
-              icon: "payments",
+              title: "Mobile Tyre Repair",
+              desc: "Fast and reliable mobile tyre repair service for punctures and minor damage. Our technicians assess the tyre condition and repair it efficiently to get you back on the road safely.",
+              image: "/services/s2.jfif",
+              icon: "build",
               delay: "0.2s"
             },
             {
-              title: "All Major Brands",
-              desc: "We stock a wide range of premium, mid-range, and budget tyres for cars, SUVs, and vans.",
-              image: "/services/s9.avif",
-              icon: "build",
+              title: "Mobile Tyre Replacement",
+              desc: "Need a new tyre urgently? We provide quick mobile tyre replacement with quality tyres fitted at your location, saving you time and hassle.",
+              image: "/services/s3.jpg",
+              icon: "autorenew",
               delay: "0.3s"
             },
             {
-              title: "Fully Equipped Van",
-              desc: "Our mobile workshops have the latest digital balancing and fitting technology on board.",
-              image: "/services/s10.webp",
-              icon: "time_to_leave",
+              title: "Mobile Tyre At Your Location",
+              desc: "Wherever you are in Leicestershire, our team comes directly to you. We deliver convenient, stress-free tyre services at your exact location.",
+              image: "/services/s4.jpg",
+              icon: "location_on",
               delay: "0.4s"
+            },
+            {
+              title: "Flat Tyres Service",
+              desc: "If you have a flat tyre, we respond quickly with the right tools and expertise to repair or replace it on the spot, ensuring minimal disruption to your journey.",
+              image: "/services/s5.avif",
+              icon: "emergency",
+              delay: "0.5s"
+            },
+            {
+              title: "Motorway Tyre Fitting",
+              desc: "Stranded on the motorway? Our emergency motorway tyre fitting service provides fast assistance to keep you safe and moving again.",
+              image: "/services/s6.jpg",
+              icon: "directions_car",
+              delay: "0.6s"
+            },
+            {
+              title: "Roadside Tyre Service",
+              desc: "Comprehensive roadside tyre service for punctures, blowouts, and damaged tyres. We provide quick response times and professional support across Leicestershire.",
+              image: "/services/s7.jpeg",
+              icon: "map",
+              delay: "0.7s"
+            },
+            {
+              title: "Emergency Tyre Fitting",
+              desc: "24/7 emergency tyre fitting service for urgent situations. Day or night, we are ready to assist with fast, dependable tyre solutions.",
+              image: "/services/s8.jpg",
+              icon: "schedule",
+              delay: "0.8s"
             }
           ].map((service, index) => (
             <div

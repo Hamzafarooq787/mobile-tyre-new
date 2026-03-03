@@ -4,7 +4,7 @@ const services = [
   {
     title: "Mobile Tyre Fitting",
     description:
-      "Expert fitting delivered straight to your home or workplace. No garage queues. No wasted time. Just comfort and convenience when you need it most.",
+      "Professional mobile tyre fitting at your home, workplace, or roadside anywhere in Leicestershire. We supply and fit tyres quickly and safely with expert service you can rely on.",
     icon: (
       <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
@@ -14,9 +14,9 @@ const services = [
     image: "/services/s1.jpg",
   },
   {
-    title: "Puncture Repairs",
+    title: "Mobile Tyre Repair",
     description:
-      "Fast, safe and British Standard repairs to get you confidently back on the road. Because every journey matters.",
+      "Fast and reliable mobile tyre repair service for punctures and minor damage. Our technicians assess the tyre condition and repair it efficiently to get you back on the road safely.",
     icon: (
       <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
@@ -26,9 +26,9 @@ const services = [
     image: "/services/s2.jfif",
   },
   {
-    title: "Tyre Pressure Checks",
+    title: "Mobile Tyre Replacement",
     description:
-      "Correct tyre pressure improves fuel efficiency and safety. We ensure your tyres are road-ready and performance-optimised.",
+      "Need a new tyre urgently? We provide quick mobile tyre replacement with quality tyres fitted at your location, saving you time and hassle.",
     icon: (
       <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path d="M5 3v4M3 5h4M6 17v4M4 19h4M13 3l4 4M17 3l-4 4M9 21l4-4M13 21l-4-4M21 13v4M19 15h4M12 7v6l4 2" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
@@ -38,9 +38,9 @@ const services = [
     image: "/services/s3.jpg",
   },
   {
-    title: "Seasonal Changes",
+    title: "Mobile Tyre At Your Location",
     description:
-      "Switch between summer and winter tyres effortlessly. Stay safe in every season without lifting a finger.",
+      "Wherever you are in Leicestershire, our team comes directly to you. We deliver convenient, stress-free tyre services at your exact location.",
     icon: (
       <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path d="M12 2v4M12 18v4M4 12H2h2m16 0h2-2M5.636 5.636l2.828 2.828M15.536 15.536l2.828 2.828M5.636 18.364l2.828-2.828M15.536 8.464l2.828-2.828" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
@@ -50,9 +50,9 @@ const services = [
     image: "/services/s4.jpg",
   },
   {
-    title: "New Tyres",
+    title: "Flat Tyres Service",
     description:
-      "Premium, mid-range, and budget options available. We help you choose the perfect tyres for your vehicle and driving style.",
+      "If you have a flat tyre, we respond quickly with the right tools and expertise to repair or replace it on the spot, ensuring minimal disruption to your journey.",
     icon: (
       <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
@@ -61,15 +61,37 @@ const services = [
     image: "/services/s5.avif",
   },
   {
-    title: "Part-Worn Tyres",
+    title: "Motorway Tyre Fitting",
     description:
-      "Quality-tested and affordable. A smart choice when you need reliability without stretching your budget.",
+      "Stranded on the motorway? Our emergency motorway tyre fitting service provides fast assistance to keep you safe and moving again.",
     icon: (
       <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
       </svg>
     ),
     image: "/services/s6.jpg",
+  },
+  {
+    title: "Roadside Tyre Service",
+    description:
+      "Comprehensive roadside tyre service for punctures, blowouts, and damaged tyres. We provide quick response times and professional support across Leicestershire.",
+    icon: (
+      <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+      </svg>
+    ),
+    image: "/services/s7.jpeg",
+  },
+  {
+    title: "Emergency Tyre Fitting",
+    description:
+      "24/7 emergency tyre fitting service for urgent situations. Day or night, we are ready to assist with fast, dependable tyre solutions.",
+    icon: (
+      <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+      </svg>
+    ),
+    image: "/services/s8.jpg",
   },
 ];
 
