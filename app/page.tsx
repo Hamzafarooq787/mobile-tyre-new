@@ -77,7 +77,7 @@ export default function Home() {
                 ))}
               </div>
               <div className="text-xs sm:text-sm font-medium text-slate-600">
-                <span className="font-bold text-slate-900 text-sm sm:text-base">500+</span> Tyres fitted this month
+                <span className="font-bold text-slate-900 text-sm sm:text-base">500+</span> Tyres Fitted This Month
               </div>
             </div>
           </div>
