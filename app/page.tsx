@@ -77,7 +77,7 @@ export default function Home() {
                 ))}
               </div>
               <div className="text-xs sm:text-sm font-medium text-slate-600">
-                <span className="font-bold text-slate-900 text-sm sm:text-base">500+</span> Tyres fitted this month
+                <span className="font-bold text-slate-900 text-sm sm:text-base">500+</span> Tyres Fitted This Month
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
                   className="w-full h-full bg-cover bg-center transition-transform duration-10000 group-hover/image:scale-110"
                   style={{
                     backgroundImage:
-                      'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUCSKUZDYcC-6b2i_9mqZ8V4FoxAIpJslJghY8b8Beh-IerUVIQYQccQrtmAsFcUBHbbdHZrPtbEfKoJxWQ7CsIi4CYGbunDGOYifnXUQ7_srAgeiBc49nvjYDG6f7XhXk0zatlPu_Ct3a2wV61d9Z2G8rOs47xJLYJHu-Isn7jNnQ1BMMDlpE0hGm0AnHKquVCKBkj-KqunR_n_iiM_Bk96fpT5I7A4XHRG0nlqKv-WWj0aU-PUvPISbgxv17RE5g34S6M6YIg78")',
+                      'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Van-Image%20%281%29-5MVG3X80eAOoIuVj7lX6mQI9vPPWEC.png")',
                   }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"></div>
@@ -111,7 +111,7 @@ export default function Home() {
                       Average Response
                     </p>
                     <p className="text-xs sm:text-sm md:text-base lg:text-xl font-black text-primary">
-                      30-45 Mins
+                      15-30 Mins
                     </p>
                   </div>
                 </div>
@@ -144,32 +144,60 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {[
             {
-              title: "24/7 Emergency Service",
-              desc: "Round-the-clock service for urgent tyre needs – we're available 24/7 to get you back on the road.",
-              image: "/services/s7.jpeg",
-              icon: "schedule",
+              title: "Mobile Tyre Fitting",
+              desc: "Professional mobile tyre fitting at your home, workplace, or roadside anywhere in Leicestershire. We supply and fit tyres quickly and safely with expert service you can rely on.",
+              image: "/services/s1.jpg",
+              icon: "tire_repair",
               delay: "0.1s"
             },
             {
-              title: "Competitive Prices",
-              desc: "High-quality service doesn't have to break the bank. Transparent pricing with no hidden fees.",
-              image: "/services/s8.jpg",
-              icon: "payments",
+              title: "Mobile Tyre Repair",
+              desc: "Fast and reliable mobile tyre repair service for punctures and minor damage. Our technicians assess the tyre condition and repair it efficiently to get you back on the road safely.",
+              image: "/services/s2.jfif",
+              icon: "build",
               delay: "0.2s"
             },
             {
-              title: "All Major Brands",
-              desc: "We stock a wide range of premium, mid-range, and budget tyres for cars, SUVs, and vans.",
-              image: "/services/s9.avif",
-              icon: "build",
+              title: "Mobile Tyre Replacement",
+              desc: "Need a new tyre urgently? We provide quick mobile tyre replacement with quality tyres fitted at your location, saving you time and hassle.",
+              image: "/services/s3.jpg",
+              icon: "autorenew",
               delay: "0.3s"
             },
             {
-              title: "Fully Equipped Van",
-              desc: "Our mobile workshops have the latest digital balancing and fitting technology on board.",
-              image: "/services/s10.webp",
-              icon: "time_to_leave",
+              title: "Mobile Tyre At Your Location",
+              desc: "Wherever you are in Leicestershire, our team comes directly to you. We deliver convenient, stress-free tyre services at your exact location.",
+              image: "/services/s4.jpg",
+              icon: "location_on",
               delay: "0.4s"
+            },
+            {
+              title: "Flat Tyres Service",
+              desc: "If you have a flat tyre, we respond quickly with the right tools and expertise to repair or replace it on the spot, ensuring minimal disruption to your journey.",
+              image: "/services/s5.avif",
+              icon: "emergency",
+              delay: "0.5s"
+            },
+            {
+              title: "Motorway Tyre Fitting",
+              desc: "Stranded on the motorway? Our emergency motorway tyre fitting service provides fast assistance to keep you safe and moving again.",
+              image: "/services/s6.jpg",
+              icon: "directions_car",
+              delay: "0.6s"
+            },
+            {
+              title: "Roadside Tyre Service",
+              desc: "Comprehensive roadside tyre service for punctures, blowouts, and damaged tyres. We provide quick response times and professional support across Leicestershire.",
+              image: "/services/s7.jpeg",
+              icon: "map",
+              delay: "0.7s"
+            },
+            {
+              title: "Emergency Tyre Fitting",
+              desc: "24/7 emergency tyre fitting service for urgent situations. Day or night, we are ready to assist with fast, dependable tyre solutions.",
+              image: "/services/s8.jpg",
+              icon: "schedule",
+              delay: "0.8s"
             }
           ].map((service, index) => (
             <div
@@ -281,7 +309,7 @@ export default function Home() {
               {/* Features Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
                 {[
-                  { icon: "schedule", title: "30-60 Minute Arrival", desc: "Average response time within the hour.", delay: "0.1s" },
+                  { icon: "schedule", title: "15-30 Minute Arrival", desc: "Average response time within the hour.", delay: "0.1s" },
                   { icon: "location_on", title: "Any Location", desc: "Home, work, or roadside – we come to you.", delay: "0.2s" },
                   { icon: "engineering", title: "Certified Fitters", desc: "Experienced and qualified technicians.", delay: "0.3s" },
                   { icon: "payments", title: "Competitive Prices", desc: "Transparent pricing with no hidden fees.", delay: "0.4s" }
