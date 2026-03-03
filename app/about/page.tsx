@@ -75,8 +75,8 @@ export default function AboutPage() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent-orange rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500" />
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <img
-                    src="/about1.png"
-                    alt="Mobile Tyre Leicestershire technician at work"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-02%20at%206.36.31%20AM-MdlsqXGMwO1zCGDQhErIJNgYxNvu6q.jpeg"
+                    alt="Leicestershire Tyres mobile fitting van parked on a residential street"
                     className="w-full h-auto max-h-72 sm:max-h-80 md:max-h-[400px] object-cover transform transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
