@@ -93,7 +93,7 @@ export default function Home() {
                   className="w-full h-full bg-cover bg-center transition-transform duration-10000 group-hover/image:scale-110"
                   style={{
                     backgroundImage:
-                      'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUCSKUZDYcC-6b2i_9mqZ8V4FoxAIpJslJghY8b8Beh-IerUVIQYQccQrtmAsFcUBHbbdHZrPtbEfKoJxWQ7CsIi4CYGbunDGOYifnXUQ7_srAgeiBc49nvjYDG6f7XhXk0zatlPu_Ct3a2wV61d9Z2G8rOs47xJLYJHu-Isn7jNnQ1BMMDlpE0hGm0AnHKquVCKBkj-KqunR_n_iiM_Bk96fpT5I7A4XHRG0nlqKv-WWj0aU-PUvPISbgxv17RE5g34S6M6YIg78")',
+                      'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Van-Image%20%281%29-5MVG3X80eAOoIuVj7lX6mQI9vPPWEC.png")',
                   }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"></div>
