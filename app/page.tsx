@@ -111,7 +111,7 @@ export default function Home() {
                       Average Response
                     </p>
                     <p className="text-xs sm:text-sm md:text-base lg:text-xl font-black text-primary">
-                      30-45 Mins
+                      15-30 Mins
                     </p>
                   </div>
                 </div>
