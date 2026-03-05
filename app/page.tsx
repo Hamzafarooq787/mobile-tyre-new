@@ -93,7 +93,7 @@ export default function Home() {
                   className="w-full h-full bg-cover bg-center transition-transform duration-10000 group-hover/image:scale-110"
                   style={{
                     backgroundImage:
-                      'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Van-Image%20%281%29-5MVG3X80eAOoIuVj7lX6mQI9vPPWEC.png")',
+                      'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mobile%20tyre%20leicester-Idqw4Q36ZUW99LlFjwZbywmO9DDjxx.webp")',
                   }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-500"></div>
