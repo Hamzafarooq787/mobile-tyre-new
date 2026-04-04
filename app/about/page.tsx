@@ -51,7 +51,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-3 gap-3 sm:gap-6 mt-6 sm:mt-8">
                 {[
                   { icon: "schedule", value: "24/7", label: "Availability" },
-                  { icon: "speed", value: "15–30m", label: "Avg Response" },
+                  { icon: "speed", value: "30–45m", label: "Avg Response" },
                   { icon: "tire_repair", value: "5K+", label: "Tyres Fitted" },
                 ].map((stat) => (
                   <div key={stat.label} className="group flex flex-col items-center text-center bg-slate-50 rounded-xl p-3 sm:p-4">
