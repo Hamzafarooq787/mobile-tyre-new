@@ -135,18 +135,8 @@ export default function ServicesPage() {
                   className="w-full h-44 sm:h-48 object-cover"
                 />
                 <div className="p-4 sm:p-6">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="flex-shrink-0">{service.icon}</div>
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900">{service.title}</h3>
-                  </div>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-4">{service.description}</p>
-                  <Link
-                    href="tel:07599298404"
-                    className="text-primary font-semibold inline-flex items-center gap-1 text-sm hover:gap-2 transition-all group"
-                  >
-                    Book now
-                    <span aria-hidden="true" className="group-hover:translate-x-1 transition-transform">→</span>
-                  </Link>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{service.description}</p>
                 </div>
               </div>
             ))}
