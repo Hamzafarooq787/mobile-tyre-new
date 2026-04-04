@@ -12,7 +12,7 @@ export default function AboutPage() {
             className="absolute inset-0 scale-105 animate-slow-zoom"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Van-Image%20%281%29-5MVG3X80eAOoIuVj7lX6mQI9vPPWEC.png')",
+                "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Roadside%20Service-Aj8w0DTGpOOdrpAfoRVTI8JkFJV8OH.jpeg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}

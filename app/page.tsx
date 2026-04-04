@@ -146,21 +146,21 @@ export default function Home() {
             {
               title: "Mobile Tyre Fitting",
               desc: "Professional mobile tyre fitting at your home, workplace, or roadside anywhere in Leicestershire. We supply and fit tyres quickly and safely with expert service you can rely on.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Tyre-Repair-1-opt-7mGCLr10ewgJcGATHGyDGAAZ2Y0bFP.webp",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20Fitting-70KSKyIQhwJ5HWNpORN74iBAHNbk8k.jpeg",
               icon: "tire_repair",
               delay: "0.1s"
             },
             {
               title: "Mobile Tyre Repair",
               desc: "Fast and reliable mobile tyre repair service for punctures and minor damage. Our technicians assess the tyre condition and repair it efficiently to get you back on the road safely.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Roadside-Tyre-Service-opt-xQ9CWqsPXyPCypMQTWVu8oMTssFexx.webp",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20Repair-V7LqewA9HOybjycnn5DG7P0zi0L0r8.jpeg",
               icon: "build",
               delay: "0.2s"
             },
             {
               title: "Mobile Tyre Replacement",
               desc: "Need a new tyre urgently? We provide quick mobile tyre replacement with quality tyres fitted at your location, saving you time and hassle.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Tyre-Replacement-opt-MMvbkTYUjsF45JpAFWnAcADMKMsxz9.webp",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20Replacement-eWuvkMAVRWgwmG3xJwhQZXNR3zbFgj.jpeg",
               icon: "autorenew",
               delay: "0.3s"
             },
@@ -174,28 +174,28 @@ export default function Home() {
             {
               title: "Flat Tyres Service",
               desc: "If you have a flat tyre, we respond quickly with the right tools and expertise to repair or replace it on the spot, ensuring minimal disruption to your journey.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Flat-Tyres-Service-opt-Ne4rt5AG5XCNgW6rtrHbyiUanJ3rkF.webp",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Flat%20Tyre%20Service-zKwuG1jGvepf8rdJY7qqbisJgKsAQa.jpeg",
               icon: "emergency",
               delay: "0.5s"
             },
             {
               title: "Motorway Tyre Fitting",
               desc: "Stranded on the motorway? Our emergency motorway tyre fitting service provides fast assistance to keep you safe and moving again.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motorway-Tyre-Fitting-opt-rth0FRcrKgM9Nr4jenvMCjTPT2JuBi.webp",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motorway%20Tyre%20fitting-W8j9YjEjWxh0uKLyLHC0z5M9JvSQDz.jpeg",
               icon: "directions_car",
               delay: "0.6s"
             },
             {
               title: "Roadside Tyre Service",
               desc: "Comprehensive roadside tyre service for punctures, blowouts, and damaged tyres. We provide quick response times and professional support across Leicestershire.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile-Tyre-Fitting-2-opt-mKYOSy18ple2s7jycF7Fh5Id5JgKG0.webp",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Roadside%20Service-EKHCHZ3tZzqALpHxHko1qo8zF9CxUh.jpeg",
               icon: "map",
               delay: "0.7s"
             },
             {
               title: "Emergency Tyre Fitting",
               desc: "24/7 emergency tyre fitting service for urgent situations. Day or night, we are ready to assist with fast, dependable tyre solutions.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency-Tyre-Fitting-opt-Hiij2Ot2QXFcyQlkCyQPHNDtdfb6lE.webp",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emergency%20Tyre%20Service-fX293cINGEWbowm7ykBaXwh9GDBJZY.jpeg",
               icon: "schedule",
               delay: "0.8s"
             }
