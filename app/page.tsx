@@ -111,7 +111,7 @@ export default function Home() {
                       Average Response
                     </p>
                     <p className="text-xs sm:text-sm md:text-base lg:text-xl font-black text-primary">
-                      15-30 Mins
+                      30-45 Mins
                     </p>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export default function Home() {
             {
               title: "Mobile Tyre Fitting",
               desc: "Professional mobile tyre fitting at your home, workplace, or roadside anywhere in Leicestershire. We supply and fit tyres quickly and safely with expert service you can rely on.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20Fitting-70KSKyIQhwJ5HWNpORN74iBAHNbk8k.jpeg",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20Updated%20Mobile%20tyre%20fitting%20image-kU9CL4kql0xSeolZsycNkYuQaX2ysV.jpeg",
               icon: "tire_repair",
               delay: "0.1s"
             },
@@ -160,7 +160,7 @@ export default function Home() {
             {
               title: "Mobile Tyre Replacement",
               desc: "Need a new tyre urgently? We provide quick mobile tyre replacement with quality tyres fitted at your location, saving you time and hassle.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20Replacement-eWuvkMAVRWgwmG3xJwhQZXNR3zbFgj.jpeg",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-02%20at%206.36.31%20AM-mcrzHXtZ4uwvhgUpd1Ggp3Fwk3ecbz.jpeg",
               icon: "autorenew",
               delay: "0.3s"
             },
@@ -181,7 +181,7 @@ export default function Home() {
             {
               title: "Motorway Tyre Fitting",
               desc: "Stranded on the motorway? Our emergency motorway tyre fitting service provides fast assistance to keep you safe and moving again.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motorway%20Tyre%20fitting-W8j9YjEjWxh0uKLyLHC0z5M9JvSQDz.jpeg",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20Motorway%20Tyre%20fitting%20image-rHyte2reiXjrCMZvjPra9EaEM5D69F.jpeg",
               icon: "directions_car",
               delay: "0.6s"
             },
@@ -229,15 +229,7 @@ export default function Home() {
                 <p className="mb-4 sm:mb-6 text-xs sm:text-sm text-slate-600">
                   {service.desc}
                 </p>
-                <Link
-                  href="/services"
-                  className="mt-auto flex items-center font-bold text-primary group-hover:gap-2 transition-all"
-                >
-                  <span>Learn More</span>
-                  <span className="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform">
-                    arrow_forward
-                  </span>
-                </Link>
+
               </div>
             </div>
           ))}
@@ -309,7 +301,7 @@ export default function Home() {
               {/* Features Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
                 {[
-                  { icon: "schedule", title: "15-30 Minute Arrival", desc: "Average response time within the hour.", delay: "0.1s" },
+                  { icon: "schedule", title: "30-45 Minute Arrival", desc: "Average response time within the hour.", delay: "0.1s" },
                   { icon: "location_on", title: "Any Location", desc: "Home, work, or roadside – we come to you.", delay: "0.2s" },
                   { icon: "engineering", title: "Certified Fitters", desc: "Experienced and qualified technicians.", delay: "0.3s" },
                   { icon: "payments", title: "Competitive Prices", desc: "Transparent pricing with no hidden fees.", delay: "0.4s" }
