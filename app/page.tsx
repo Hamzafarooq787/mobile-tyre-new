@@ -111,7 +111,7 @@ export default function Home() {
                       Average Response
                     </p>
                     <p className="text-xs sm:text-sm md:text-base lg:text-xl font-black text-primary">
-                      15-30 Mins
+                      30-45 Mins
                     </p>
                   </div>
                 </div>
@@ -309,7 +309,7 @@ export default function Home() {
               {/* Features Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
                 {[
-                  { icon: "schedule", title: "15-30 Minute Arrival", desc: "Average response time within the hour.", delay: "0.1s" },
+                  { icon: "schedule", title: "30-45 Minute Arrival", desc: "Average response time within the hour.", delay: "0.1s" },
                   { icon: "location_on", title: "Any Location", desc: "Home, work, or roadside – we come to you.", delay: "0.2s" },
                   { icon: "engineering", title: "Certified Fitters", desc: "Experienced and qualified technicians.", delay: "0.3s" },
                   { icon: "payments", title: "Competitive Prices", desc: "Transparent pricing with no hidden fees.", delay: "0.4s" }
