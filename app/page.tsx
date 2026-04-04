@@ -146,7 +146,7 @@ export default function Home() {
             {
               title: "Mobile Tyre Fitting",
               desc: "Professional mobile tyre fitting at your home, workplace, or roadside anywhere in Leicestershire. We supply and fit tyres quickly and safely with expert service you can rely on.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20Fitting-70KSKyIQhwJ5HWNpORN74iBAHNbk8k.jpeg",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20Updated%20Mobile%20tyre%20fitting%20image-kU9CL4kql0xSeolZsycNkYuQaX2ysV.jpeg",
               icon: "tire_repair",
               delay: "0.1s"
             },
@@ -181,7 +181,7 @@ export default function Home() {
             {
               title: "Motorway Tyre Fitting",
               desc: "Stranded on the motorway? Our emergency motorway tyre fitting service provides fast assistance to keep you safe and moving again.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Motorway%20Tyre%20fitting-W8j9YjEjWxh0uKLyLHC0z5M9JvSQDz.jpeg",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/New%20Motorway%20Tyre%20fitting%20image-rHyte2reiXjrCMZvjPra9EaEM5D69F.jpeg",
               icon: "directions_car",
               delay: "0.6s"
             },
