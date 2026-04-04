@@ -160,7 +160,7 @@ export default function Home() {
             {
               title: "Mobile Tyre Replacement",
               desc: "Need a new tyre urgently? We provide quick mobile tyre replacement with quality tyres fitted at your location, saving you time and hassle.",
-              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20Replacement-eWuvkMAVRWgwmG3xJwhQZXNR3zbFgj.jpeg",
+              image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-02%20at%206.36.31%20AM-mcrzHXtZ4uwvhgUpd1Ggp3Fwk3ecbz.jpeg",
               icon: "autorenew",
               delay: "0.3s"
             },

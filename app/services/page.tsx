@@ -35,7 +35,7 @@ const services = [
         <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" fill="none" />
       </svg>
     ),
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mobile%20Tyre%20Replacement-eWuvkMAVRWgwmG3xJwhQZXNR3zbFgj.jpeg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-02%20at%206.36.31%20AM-mcrzHXtZ4uwvhgUpd1Ggp3Fwk3ecbz.jpeg",
   },
   {
     title: "Mobile Tyre At Your Location",
