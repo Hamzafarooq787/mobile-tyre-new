@@ -229,15 +229,7 @@ export default function Home() {
                 <p className="mb-4 sm:mb-6 text-xs sm:text-sm text-slate-600">
                   {service.desc}
                 </p>
-                <Link
-                  href="/services"
-                  className="mt-auto flex items-center font-bold text-primary group-hover:gap-2 transition-all"
-                >
-                  <span>Learn More</span>
-                  <span className="material-symbols-outlined ml-1 text-sm group-hover:translate-x-1 transition-transform">
-                    arrow_forward
-                  </span>
-                </Link>
+
               </div>
             </div>
           ))}
