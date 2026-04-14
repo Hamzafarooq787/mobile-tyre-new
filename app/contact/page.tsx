@@ -77,7 +77,7 @@ export default function ContactPage() {
             {/* Map */}
             <div className="relative overflow-hidden rounded-xl border border-slate-200 h-52 sm:h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38775.72963644766!2d-1.1508355563872785!3d52.597038059738246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48776154e0ee4c3d%3A0x25a58104f8f1a1a8!2sOadby%2C%20UK!5e0!3m2!1sen!2s!4v1776153795030!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9693.93240911192!2d-1.1508355563872785!3d52.597038059738246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f15.1!3m3!1m2!1s0x48776154e0ee4c3d%3A0x25a58104f8f1a1a8!2sOadby%2C%20UK!5e0!3m2!1sen!2s!4v1776153795030!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
