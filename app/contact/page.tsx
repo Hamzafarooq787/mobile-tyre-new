@@ -77,14 +77,14 @@ export default function ContactPage() {
             {/* Map */}
             <div className="relative overflow-hidden rounded-xl border border-slate-200 h-52 sm:h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6140.421!2d-1.0842706234244428!3d52.59322683080559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f14.0!3m3!1m2!1s0x4877650c04664b21%3A0xd3763e25d3638b21!2sLeicestershire%20Mobile%20Tyres%20LTD!5e0!3m2!1sen!2s!4v1775327082530!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3073.5!2d-1.0743!3d52.5983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f15.0!3m3!1m2!1s0x4877651a7e0f5555%3A0x12345abcde!2sOadby%2C%20Leicester%2C%20UK!5e0!3m2!1sen!2s!4v1775327082530!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Leicestershire Mobile Tyres LTD location"
+                title="Oadby, Leicester location"
               />
             </div>
           </div>
