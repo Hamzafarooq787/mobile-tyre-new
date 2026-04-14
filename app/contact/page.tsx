@@ -60,7 +60,7 @@ export default function ContactPage() {
 
               {/* Email card */}
               <Link
-                href="mailto:info@mobiletyreleicestershire.co.uk"
+                href="mailto:mobiletyresleicestershire@gmail.com"
                 className="group relative overflow-hidden flex flex-col gap-3 rounded-xl border border-slate-200 bg-white p-5 hover:border-primary hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-bold text-slate-900 group-hover:text-primary transition-colors">Email Us</h3>
                   <p className="text-xs text-slate-500 mb-1">We reply within 2 hours</p>
-                  <p className="text-primary font-bold text-xs break-all">info@mobiletyreleicestershire.co.uk</p>
+                  <p className="text-primary font-bold text-xs break-all">mobiletyresleicestershire@gmail.com</p>
                 </div>
               </Link>
             </div>
@@ -77,7 +77,7 @@ export default function ContactPage() {
             {/* Map */}
             <div className="relative overflow-hidden rounded-xl border border-slate-200 h-52 sm:h-64">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.693923604493!2d-1.0842706234244428!3d52.59322683080559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877650c04664b21%3A0xd3763e25d3638b21!2sLeicestershire%20Mobile%20Tyres%20LTD!5e0!3m2!1sen!2s!4v1775327082530!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6140.421!2d-1.0842706234244428!3d52.59322683080559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f14.0!3m3!1m2!1s0x4877650c04664b21%3A0xd3763e25d3638b21!2sLeicestershire%20Mobile%20Tyres%20LTD!5e0!3m2!1sen!2s!4v1775327082530!5m2!1sen!2s"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
