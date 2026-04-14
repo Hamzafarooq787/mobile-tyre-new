@@ -69,10 +69,10 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <span className="material-symbols-outlined text-base text-primary flex-shrink-0 mt-0.5">mail</span>
                 <a
-                  href="mailto:info@mobiletyreleicestershire.co.uk"
+                  href="mailto:mobiletyresleicestershire@gmail.com"
                   className="break-all hover:text-primary transition-colors"
                 >
-                  info@mobiletyreleicestershire.co.uk
+                  mobiletyresleicestershire@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
